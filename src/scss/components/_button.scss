@@ -1,0 +1,19 @@
+.btn {
+  display: inline-block;
+  padding: 20px 46px;
+  border: 0;
+  border: 2px solid transparent;
+  border-radius: 10em;
+  background-color: var(--primary-color);
+  color: var(--neutral-900);
+  font-size: var(--fs-24);
+  font-weight: 500;
+  line-height: 22px;
+  transition: background-color var(--trs-35), border var(--trs-35);
+  letter-spacing: 0.004em;
+
+  @include hover {
+    border: 2px solid transparent;
+    background-color: var(--neutral-100);
+  }
+}

@@ -1,0 +1,9 @@
+@mixin margin-b-center {
+  display: block;
+  margin-inline: auto;
+}
+
+@mixin margin-b-left {
+  display: block;
+  margin-left: auto;
+}

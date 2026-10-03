@@ -1,0 +1,74 @@
+:root {
+  --ff-primary: "yandex", sans-serif;
+  --content-width: 69.125rem; // 1106px;
+  --container-offset: 0.9375rem; // 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  /* ------------------- */
+
+  /* color theme         */
+
+  /* ------------------- */
+  --neutral-100: hsl(0deg 0% 100%);
+  --neutral-500: hsl(0deg 0% 77%);
+  --neutral-600: hsl(0deg 0% 50%);
+  --neutral-900: hsl(30deg 3% 13%);
+  --primary-color: hsl(50deg 100% 63%);
+  --gradient-color:
+    linear-gradient(
+      0deg,
+      rgb(255 255 255 / 20%) 0%,
+      rgb(255 255 255 / 20%) 100%
+    ),
+    linear-gradient(
+      90deg,
+      hsl(5deg 100% 65% / 20%) 0%,
+      hsl(328deg 80% 60% / 20%) 25%,
+      hsl(263deg 84% 60% / 20%) 72%,
+      hsl(227deg 94% 61% / 20%) 100%
+    );
+  --accent-color: hsl(0deg 0% 0% / 0%);
+  --active-color: hsl(0deg 0% 0% / 0%);
+  --focus-visible: hsl(221deg 51% 86%);
+  --placeholder-color: hsl(0deg 0% 80%);
+
+  /* ------------------- */
+
+  /* font-size           */
+
+  /* ------------------- */
+  --fs-10: 0.625rem; // 10px;
+  --fs-13: 0.8125rem; // 13px;
+  --fs-16: 1rem; // 16px;
+  --fs-18: 1.125rem; // 18px;
+  --fs-24: 1.5rem; // 24px;
+  --fs-32: 2rem; // 32px;
+  --fs-36: 2.25rem; // 36px;
+  --fs-48: 3rem; // 48px;
+  --fs-56: 3.5rem; // 56px;
+  --fs-72: 4.5rem; // 72px;
+
+  /* ------------------- */
+
+  /* transition          */
+
+  /* ------------------- */
+  --trs-35: 0.35s ease-in-out;
+
+  /* ------------------- */
+
+  /* margin              */
+
+  /* ------------------- */
+  --mrg-50: 3.125rem; // 50px;
+  --mrg-100: 6.25rem; // 100px;
+  --mrg-150: 9.375rem; // 150px;
+  --mrg-200: 12.5rem; // 200px;
+
+  /* ------------------- */
+
+  /* gap                 */
+
+  /* ------------------- */
+  --gap: 2rem; // 32px;
+}

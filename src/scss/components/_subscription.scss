@@ -1,0 +1,327 @@
+.subscription {
+  padding-top: 84px;
+  padding-bottom: 95px;
+
+  @include small-tablet {
+    padding-bottom: 0;
+  }
+
+  @include mobile {
+    padding-top: 53px;
+  }
+}
+
+.content {
+  &__list {
+    position: relative;
+    display: grid;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 116px 33px;
+
+    @include tablet {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 70px 0;
+    }
+
+    @include mobile {
+      gap: 0;
+    }
+  }
+
+  &__item-text._first {
+    padding-left: 93px;
+    transition: transform 0.8s ease 0s, opacity 0.8s ease 0s, padding-left var(--trs-35);
+    transform: translate(-120%, 0%);
+    opacity: 0;
+
+    @include small-tablet {
+      padding-left: 17px;
+    }
+
+    &._active {
+      transform: translate(0, 0%);
+      opacity: 1;
+    }
+  }
+
+  &__item-text._second {
+    transition: transform 0.8s ease 0s, opacity 0.8s ease 0s, padding-left var(--trs-35);
+    transform: translate(120%, 0%);
+    opacity: 0;
+
+    @include tablet {
+      padding-left: 93px;
+    }
+
+    @include small-tablet {
+      padding-left: 17px;
+    }
+
+    &._active {
+      transition: transform 0.8s ease 0.2s, opacity 0.8s ease 0.2s, padding-left var(--trs-35);
+      transform: translate(0, 0%);
+      opacity: 1;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 35px;
+    color: var(--neutral-900);
+    font-size: var(--fs-48);
+    font-weight: 900;
+    line-height: 48px;
+    letter-spacing: -0.96px;
+    max-width: 407px;
+
+    @include tablet {
+      max-width: 100%;
+    }
+
+    @include mobile {
+      font-size: var(--fs-32);
+      line-height: 32px;
+    }
+
+    @include small-mobile {
+      max-width: 286px;
+      margin-bottom: 22px;
+      letter-spacing: -0.61px;
+    }
+  }
+
+  &__desc._first {
+    margin-bottom: 0;
+  }
+
+  &__desc {
+    margin: 0;
+    margin-bottom: 42px;
+    color: var(--neutral-900);
+    font-size: var(--fs-24);
+    font-weight: 500;
+    line-height: 28.7px;
+    max-width: 419px;
+
+    @include tablet {
+      max-width: 100%;
+    }
+
+    @include mobile {
+      margin-bottom: 11px;
+      font-size: var(--fs-16);
+      line-height: 19.2px;
+    }
+
+    @include small-mobile {
+      max-width: 310px;
+    }
+  }
+
+  &__item-img._first {
+    display: flex;
+    transition: transform 0.8s ease 0s, opacity 0.8s ease 0s;
+    transform: translate(120%, 0%);
+    opacity: 0;
+
+    &._active {
+      width: 538px;
+      transition: transform 0.8s ease 0s, opacity 0.8s ease 0s;
+      transform: translate(0%, 0%);
+      opacity: 1;
+    }
+
+    &::after {
+      position: absolute;
+      top: 67px;
+      right: 258px;
+      width: 269px;
+      height: 265px;
+      background: url("../img/subscription-img/subscription_plus.png") no-repeat;
+      transform: rotate(6deg);
+      content: "";
+      background-size: contain;
+    }
+
+    &::before {
+      position: absolute;
+      top: -9px;
+      right: -20px;
+      flex-shrink: 0;
+      width: 412.783px;
+      height: 355.042px;
+      border-radius: 176em;
+      background: #8241ef;
+      transform: rotate(-140.03deg);
+      content: "";
+      opacity: 0.29;
+      filter: blur(100px);
+    }
+
+    @include tablet {
+      position: relative;
+      display: none;
+    }
+  }
+
+  &__img._first {
+    position: absolute;
+    top: -160px;
+    right: -10px;
+    width: 742.614px;
+    height: 742.614px;
+    transform: rotate(-13.159deg);
+  }
+
+  &__picture._first {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    @include tablet {
+      width: 742px;
+      height: 450px;
+    }
+  }
+
+  &__picture._second {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    @include tablet {
+      display: block;
+      width: auto;
+      height: auto;
+      margin: 0 auto;
+    }
+  }
+
+  &__item-img._second {
+    display: flex;
+    transition: transform 0.8s ease 0s, opacity 0.8s ease 0s;
+    transform: translate(-120%, 0%);
+    opacity: 0;
+
+    &._active {
+      transition: transform 0.8s ease 0.2s, opacity 0.8s ease 0.2s;
+      transform: translate(0, 0%);
+      opacity: 1;
+    }
+
+    @include tablet {
+      position: relative;
+      height: 392px;
+    }
+
+    @include mobile {
+      display: flex;
+      align-items: center;
+      height: 368px;
+    }
+
+    &::after {
+      position: absolute;
+      bottom: 61.5px;
+      left: 17.2px;
+      width: 450.55px;
+      height: 450.55px;
+      background: url("../img/subscription-img/subscription_text.png") no-repeat;
+      transform: rotate(347.3deg);
+      content: "";
+      background-size: contain;
+
+      @include tablet {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      @include mobile {
+        position: absolute;
+        top: 50%;
+        left: 50.5%;
+        width: 301px;
+        height: 304px;
+        transform: translate(-50%, -50%) rotate(-12.8deg);
+      }
+    }
+
+    &::before {
+      position: absolute;
+      bottom: 48px;
+      left: 18px;
+      flex-shrink: 0;
+      width: 412.783px;
+      height: 369.042px;
+      border-radius: 176em;
+      background: #8241ef;
+      transform: rotate(220deg);
+      content: "";
+      opacity: 0.29;
+      filter: blur(100px);
+
+      @include tablet {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 370px;
+        height: 370px;
+        transform: translate(-50%, -50%);
+      }
+
+      @include mobile {
+        position: absolute;
+        top: 65%;
+        left: 53%;
+        width: 215.685px;
+        height: 192.829px;
+        transform: translate(-50%, -50%) rotate(-140.03deg);
+        filter: blur(52px);
+      }
+    }
+  }
+
+  &__img._second {
+    position: absolute;
+    bottom: 98px;
+    left: 99px;
+
+    @include tablet {
+      position: relative;
+      bottom: 0;
+      left: 0;
+    }
+
+    @include mobile {
+      position: relative;
+      bottom: 4px;
+      left: 0;
+      width: 188.853px;
+      height: 262.225px;
+    }
+  }
+
+  &__btn {
+    padding: 20px 46px;
+    box-shadow: 0 4px 98px 0 rgb(255 222 64 / 59%);
+    transition: color 0.35s ease 0s, background-color 0.35s ease 0s, border 0.35s ease 0s;
+
+    @include small-tablet {
+      display: none;
+    }
+
+    @include mobile {
+      padding: 14px 87px;
+      font-size: var(--fs-18);
+    }
+
+    @include small-mobile {
+      width: 100%;
+      padding: 14px 0;
+    }
+  }
+}

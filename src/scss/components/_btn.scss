@@ -1,0 +1,28 @@
+.btn-sticky {
+  position: sticky;
+  bottom: 24px;
+  display: none;
+  transition: color 0.35s ease 0s, background-color 0.35s ease 0s, border 0.35s ease 0s;
+  text-align: center;
+  box-shadow: 0 4px 98px 0 rgb(255 222 64 / 59%);
+
+  @include small-tablet {
+    display: block;
+    margin: 0 27px 82px;
+    padding: 24px 48px;
+  }
+
+  @include mobile {
+    margin: 0 27px 45px;
+    padding: 14px 48px;
+    font-size: var(--fs-18);
+  }
+
+  @include small-mobile {
+    width: 83%;
+    margin: 0 auto;
+    margin-bottom: 71px;
+    padding: 14px 0;
+    transition: all var(--trs-35);
+  }
+}
